@@ -8,5 +8,3 @@ Include broadcat.js in your html file.
 
 "That's it?" - you
 "Yes, that's literally all you've got to do for infinitely more cat miles on your website!" - me
-
-I'll be running the server until at least some time tomorrow afternoon. If I can figure out the free tier on AWS, I'll probably just keep running it, because why not?
