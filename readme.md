@@ -4,9 +4,7 @@ Ever thought your site was missing that little something? Well this is the inter
 
 ## How to
 
-'''html
-< s cript src="broadcat.js"></s cript>
-'''
+Include broadcat.js in your html file.
 
 "That's it?" - you
 "Yes, that's literally all you've got to do for infinitely more cat miles on your website!" - me
