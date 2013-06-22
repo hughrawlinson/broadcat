@@ -5,7 +5,7 @@ Ever thought your site was missing that little something? Well this is the inter
 ## How to
 
 '''html
-<script src="broadcat.js"></script>
+< s cript src="broadcat.js"></s cript>
 '''
 
 "That's it?" - you
