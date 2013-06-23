@@ -7,6 +7,9 @@ function catContainerPosition(){
 	$("#catContainer label").attr('style',
 		"color:#000;font-size:30px;font-family:'Helvetica Neue',Helvetica,Arial;font-weight:100;"
 	);
+	$("#catContainer img").attr('style',
+		"height:300px;width:300px;"
+	);
 }
 $("body").append("<div id='catContainer'><label>BroadCat</label><img /></div><script type='text/javascript' src='https://api.instagram.com/v1/tags/meow/media/recent?client_id=96f9bfe647514976ba6cea29b9cb33f2&callback=parseResponse'></script>");
 $(document).ready(catContainerPosition());
@@ -23,7 +26,5 @@ setInterval(function(){
 	if(ready){
 		$("#catContainer img").attr("src",CATS.data[count].images.standard_resolution.url);
 		count = (count+1)%CATS.data.length;
-	}
-},2000);S.data.length;
 	}
 },2000);
