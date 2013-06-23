@@ -2,14 +2,14 @@
 // just include this js file in your html and enjoy the cats, man ;)
 
 $("body").append(
-	"<div id='catContainer'><label>BroadCat</label><img src='http://placehold.it/250x250' /></div>"
+	"<div id='catContainer'><label>BroadCat</label><img /></div>"
 );
 function catContainerPosition(){
 	$("#catContainer").attr('style',
-		"background:#FFF;position:absolute;left:0px;bottom:0px;overflow:hidden;height:265px;width:250px;text-align:center;border:1px black solid;padding:3px;"
+		"background:#FFF;position:absolute;left:0px;bottom:0px;overflow:hidden;height:330px;width:306px;text-align:center;border:1px black solid;padding:6px;"
 	);
 	$("#catContainer label").attr('style',
-		"font-size:15px;font-family:'Courier New';"
+		"color:#000;font-size:30px;font-family:'Helvetica Neue',Helvetica,Arial;font-weight:100;"
 	);
 }
 $("body").append("<script type='text/javascript' src='https://api.instagram.com/v1/tags/meow/media/recent?client_id=96f9bfe647514976ba6cea29b9cb33f2&callback=parseResponse'></script>");
