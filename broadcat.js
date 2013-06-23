@@ -11,7 +11,8 @@ function catContainerPosition(){
 		"height:300px;width:300px;"
 	);
 }
-$("body").append("<div id='catContainer'><label>BroadCat</label><img /></div><script type='text/javascript' src='https://api.instagram.com/v1/tags/meow/media/recent?client_id=96f9bfe647514976ba6cea29b9cb33f2&callback=parseResponse'></script>");
+var catsurl = "<script id='catscript' type='text/javascript' src='https://api.instagram.com/v1/tags/meow/media/recent?client_id=96f9bfe647514976ba6cea29b9cb33f2&callback=parseResponse'></script>";
+$("body").append("<div id='catContainer'><label>BroadCat</label><img /></div>"+catsurl);
 $(document).ready(catContainerPosition());
 $(window).resize(catContainerPosition());
 $(window).scroll(catContainerPosition());
@@ -25,6 +26,13 @@ function parseResponse( msg ) {
 setInterval(function(){
 	if(ready){
 		$("#catContainer img").attr("src",CATS.data[count].images.standard_resolution.url);
-		count = (count+1)%CATS.data.length;
+		if (count==CATS.data.length){
+			$("#catscript").remove();
+			$("body").append(catsurl);
+			count = 0;
+		}
+		else{
+			count++;
+		}
 	}
 },2000);
