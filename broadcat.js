@@ -26,7 +26,7 @@ function parseResponse( msg ) {
 setInterval(function(){
 	if(ready){
 		$("#catContainer img").attr("src",CATS.data[count].images.standard_resolution.url);
-		if (count==CATS.data.length){
+		if (count==CATS.data.length-1){
 			$("#catscript").remove();
 			$("body").append(catsurl);
 			count = 0;
